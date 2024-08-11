@@ -24,6 +24,8 @@ To optimize performance, the API calls to the Kubernetes API server use server-s
 ```
 cd kubectl-label-assist
 
+go install cmd/autocomplete/kubectl-la-autocomplete.go 
+
 source ./completion/kubectl-la.bash
 
 kubectl get pods -n kube-system -l <tab key press>
